@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyCustomCollectionViewCell.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+#pragma -mark
+#pragma Collectionview Datasources
+- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+{
+    //reuse identifier from storyboard
+    static NSString *CellIdentifier = @"MyCustomCell";
+    
+    //Set this to our collectionViewCell subclass
+    MyCustomCollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    //Assign our image
+    cell.cellImage.image = [UIImage imageNamed:@"Apple.png"];
+    
+    return cell;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 50;
+}
+
+#pragma -mark
+#pragma Collectionview Delegates
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"Did press cell at index %ld", indexPath.row);
 }
 
 - (void)didReceiveMemoryWarning {

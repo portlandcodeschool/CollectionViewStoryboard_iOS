@@ -14,6 +14,8 @@
 		84561A551A37DC4A002BFE44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84561A541A37DC4A002BFE44 /* Images.xcassets */; };
 		84561A581A37DC4A002BFE44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84561A561A37DC4A002BFE44 /* LaunchScreen.xib */; };
 		84561A641A37DC4A002BFE44 /* CollectionViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84561A631A37DC4A002BFE44 /* CollectionViewExampleTests.m */; };
+		84561A711A37DEBD002BFE44 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 84561A701A37DEBD002BFE44 /* apple.png */; };
+		84561A751A37E0E4002BFE44 /* MyCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84561A741A37E0E4002BFE44 /* MyCustomCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		84561A5D1A37DC4A002BFE44 /* CollectionViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84561A621A37DC4A002BFE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84561A631A37DC4A002BFE44 /* CollectionViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewExampleTests.m; sourceTree = "<group>"; };
+		84561A701A37DEBD002BFE44 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		84561A731A37E0E4002BFE44 /* MyCustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCollectionViewCell.h; sourceTree = "<group>"; };
+		84561A741A37E0E4002BFE44 /* MyCustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				84561A4B1A37DC4A002BFE44 /* AppDelegate.h */,
+				84561A721A37DEC6002BFE44 /* Images */,
 				84561A4C1A37DC4A002BFE44 /* AppDelegate.m */,
 				84561A4E1A37DC4A002BFE44 /* ViewController.h */,
 				84561A4F1A37DC4A002BFE44 /* ViewController.m */,
@@ -89,6 +95,8 @@
 				84561A541A37DC4A002BFE44 /* Images.xcassets */,
 				84561A561A37DC4A002BFE44 /* LaunchScreen.xib */,
 				84561A471A37DC4A002BFE44 /* Supporting Files */,
+				84561A731A37E0E4002BFE44 /* MyCustomCollectionViewCell.h */,
+				84561A741A37E0E4002BFE44 /* MyCustomCollectionViewCell.m */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -117,6 +125,14 @@
 				84561A621A37DC4A002BFE44 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84561A721A37DEC6002BFE44 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84561A701A37DEBD002BFE44 /* apple.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +217,7 @@
 			files = (
 				84561A531A37DC4A002BFE44 /* Main.storyboard in Resources */,
 				84561A581A37DC4A002BFE44 /* LaunchScreen.xib in Resources */,
+				84561A711A37DEBD002BFE44 /* apple.png in Resources */,
 				84561A551A37DC4A002BFE44 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +239,7 @@
 				84561A501A37DC4A002BFE44 /* ViewController.m in Sources */,
 				84561A4D1A37DC4A002BFE44 /* AppDelegate.m in Sources */,
 				84561A4A1A37DC4A002BFE44 /* main.m in Sources */,
+				84561A751A37E0E4002BFE44 /* MyCustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
